@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+	width: 100%;
+	height: 100vh;
+	background: #481241 url(../img/background.png) no-repeat;
+	background-size: cover;
+}
+
+.header__top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 209px 0 210px;
+}
+
+.header__menu {
+	list-style-type: none;
+}
+
+.header__menu_item {
+	display: inline;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.header__menu_link {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 17px;
+	margin-right: 17px;
+}
+
+
+.hamburger__container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburger__bar1, .hamburger__bar2, .hamburger__bar3 {
+    width: 14px;
+    height: 2px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .hamburger__bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 2px) ;
+    transform: rotate(-45deg) translate(-3px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .hamburger__bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .hamburger__bar3 {
+    -webkit-transform: rotate(45deg) translate(0px, -2px) ;
+    transform: rotate(45deg) translate(0px, -2px) ;
+}
+
+.header__title_container {
+	text-align: center;
+	margin-top: 25vh;
+}
+
+.header__top_title {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-weight: 600;
+    letter-spacing: 2px;
+	font-size: 36px;
+	color: #fff;
+}
+
+.header_main_text {
+	font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    line-height: 123px;
+    letter-spacing: 4px;
+    font-size: 100px;
+    color: #fff;
+}
+
+.header_cta_button {
+	margin: 20px 0 40px 0;
+	background: transparent;
+	border: 3px solid #fff;
+	border-radius: 3px;
+	width: 280px;
+	height: 68px;
+	font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+}
+
+.header_cta_button:hover {
+	background: #672e4c;
+	border: 3px solid #672e4c;
+}
+
+.header__bottom_title {
+	font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.features__container {
+	min-height: 480px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.features__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 360px;
+  	margin: 25px;
+  	text-align: center;
+
+}
+
+.featured__icon {
+	display: block;
+	width: 108px;
+	height: 108px;
+	border: 2px solid #000;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.features__title {
+	font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.features__h_line { 
+	width: 88px; 
+	height:1px; 
+	background: #f57365;
+	margin-bottom: 20px;
+ }
+
+.features_sub_title {
+ 	color: #6b6b6b;
+ 	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+.introducing {
+	min-height: 881px;
+	background: #f7f7f7;
+	background-image: url(../img/iphone.png);
+	background-position: 20% bottom;
+	background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.introducing__text_container {
+	width: 554px;
+	margin-right: 350px;
+}
+
+.introducing__title {
+	font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.introducing__p_text {
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #3f3f3f;
+    margin-bottom: 30px;
+}
+
+
+.testimonials {
+	background-image: url(../img/testimonials_background.png);
+	height: 461px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+  	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 300px;
+  	padding: 10px;
+}
+
+
+.testimonials__avatar {
+	 margin-bottom: 30px;
+}
+
+.testimonials__text {
+	font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 36px;
+    color: #afaaaf;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.testimonials__autor {
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 36px;
+    color: #afaaaf;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonials__button {
+    display: inline-block;
+    margin: 0 0.02em;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #ffffff5c;
+    transition: color 0.1s;
+}
+
+.testimonials__button_active{
+    display: inline-block;
+    margin: 0 0.02em;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background: #fff;
+    transition: color 0.1s;
+}
+
+
+.cuisines {
+	display: flex;
+  	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cuisines__title {
+	font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 45px;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.cuisines__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #D7DBDD;
+  justify-content: space-between;
+ }
+
+.cuisines__gallery_title {
+	font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cuisines__gallery_subtitle {
+	font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 15px;
+    line-height: 10px;
+    color: #ffffffeb;
+    text-shadow: 0 0 40px #00000063;
+}
+
+.cuisines__photo {
+	background-image: url(../img/cousina1.png);
+	background-color: #f57365;
+  	min-height: 225px;
+  	min-width: 320px;
+  	width: 20%;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	display: flex;
+  	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0 0 40px #00000063;
+}
+
+.cuisines__photo:hover {
+ 	cursor: pointer;
+ 	background-blend-mode: soft-light;
+}
+
+.photo2 {
+	background-image: url(../img/cousina2.png);
+}
+
+.photo3 {
+	background-image: url(../img/cousina3.png);
+}
+
+.photo4 {
+	background-image: url(../img/cousina4.png);}
+
+.photo5 {
+	background-image: url(../img/cousina5.png);}
+
+.photo6 {
+	background-image: url(../img/cousina6.png);
+}
+
+.photo7 {
+	background-image: url(../img/cousina7.png);
+}
+
+.photo8 {
+	background-image: url(../img/cousina8.png);
+}
+
+.photo9 {
+	background-image: url(../img/cousina9.png);
+}
+
+.photo10 {
+	background-image: url(../img/cousina10.png);
+}
